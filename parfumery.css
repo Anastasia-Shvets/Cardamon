@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+
+}
+/* E33B62 */
+h1 {
+    font-size: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    margin-bottom: 15px;
+}
+header {
+    font-family: 'Cormorant Garamond', serif;
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.head-top {
+    width: 100%;
+    display: table-row;
+}
+a {
+    text-decoration: none;
+    color: #E33B62;
+}
+.login {
+    border-bottom: 1px solid #e0dfe0;
+    color: #E33B62;
+    display: table-cell;
+    text-align: left;
+    width: 33%;
+    padding: 20px 0;
+}
+.logo {
+    border-bottom: 1px solid #e0dfe0;
+    display: table-cell;
+    color: black;
+    width: 33%;
+    text-align: center;
+}
+.wish {
+    border-bottom: 1px solid #e0dfe0;
+    display: table-cell;
+    text-align: right;
+}
+.wish .item {
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding-left: 24px;
+    margin-left: 20px;
+}
+.wish .item .icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  text-align: right;
+  padding-left: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.icon.wishlist {
+    background-image: url(img/heart.png);
+}
+.icon.basket {
+    background-image: url(img/shopping-cart.png);
+}
+
+nav {
+    width: 100%;
+}
+.navigation {
+    width: 100%;
+    display: table;
+}
+.navigation .item {
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+}
+.table_cell {
+    display: table-cell;
+}
+.table_row {
+    display: table-row;
+}
+.table {
+    width: 100%;
+    display: table;
+}
+
+main {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.main_slider {
+    vertical-align: top;
+    background-color: #f7e4ec;
+    height: 400px;
+}
+.text_slider {
+    color: black;
+    margin: 0 auto;
+    font-size: 15px;
+    position: relative;
+    padding-right: 30px;
+    width: 39%;
+    display: inline-block;
+    padding: 40px;
+    height: 400px;
+    vertical-align: top;
+}
+.slider_description {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+a.button {
+    text-decoration: none;
+    color: #E33B62;
+    border: 1px solid #E33B62;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+a.button::after {
+    content: "";
+    background-image: url(img/arrow_right.png);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 10px;
+}
+a.button:hover {
+    background-color: #E33B62;
+    color: white;
+}
+a.button:hover::after {
+    background-image: url(img/arrow_right_hover.png);
+}
+
+.photo_slider {
+    width: 60%;
+    background-image: url(img/miss_dior1.jpg);
+    height: 400px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+.catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product_list {
+    margin: 0 -20px;
+}
+.product_item {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+}
+.product_top {
+    width: calc(100% - 40px);
+    border-top: 2px solid #ede5e2;
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 0;
+    height: 20px;
+    position: relative;
+}
+.product_top::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-right: 2px solid #ede5e2;
+    border-bottom: 2px solid #ede5e2;
+    position: absolute;
+    left: -20px;
+}
+.product_top::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-left: 2px solid #ede5e2;
+    border-bottom: 2px solid #ede5e2;
+    position: absolute;
+    right: -20px;
+}
+.product_content {
+    border-right: 2px solid #ede5e2;
+    border-left: 2px solid #ede5e2;
+    position: relative;
+}
+.product_bottom {
+    width: calc(100% - 40px);
+    border-bottom: 2px solid #ede5e2;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 0;
+    height: 20px;
+    position: relative;
+}
+.product_bottom::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-right: 2px solid #ede5e2;
+    border-top: 2px solid #ede5e2;
+    position: absolute;
+    left: -20px;
+}
+.product_bottom::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-left: 2px solid #ede5e2;
+    border-top: 2px solid #ede5e2;
+    position: absolute;
+    right: -20px;
+}
+.product_title {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Alegreya', serif;
+}
+.product_article {
+    text-align: center;
+    font-size: 12px;
+    margin: 12px;
+    color: #adadad;
+}
+.product_photo {
+    background-image: url(img/Armani_Si.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+    margin: 29px 105px 29px;
+}
+
+.product_photo_1 {
+  background-image: url(img/giorgio_armani_code.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+  margin: 29px 70px 29px;
+}
+
+.product_photo_2 {
+  background-image: url(img/d&g_the_one.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+  margin: 29px 80px 29px;
+}
+
+.product_photo_3 {
+  background-image: url(img/versace_vanitas.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+  margin: 29px 90px 29px;
+}
+
+.product_photo_4 {
+  background-image: url(img/d&g_limperatrice.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+  margin: 29px 100px 29px;
+}
+
+.product_photo_5 {
+  background-image: url(img/bleu_de_chanel.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  width: 100%;
+  margin: 29px 80px 29px;
+}
+.product_volume {
+    border-bottom: 1px solid #c0c0c0;
+    width: 88%;
+    margin: 0 16px;
+}
+.product_size {
+    vertical-align: middle;
+  }
+.product_size li {
+    display: inline;
+    font-size: 20px;
+    margin: 16px;
+}
+.product_size li::after {
+    content: "ml";
+    color: #c0c0c0;
+    font-size: 14px;
+    margin-left: 3px;
+}
+.product_price {
+  width: 50%;
+  float: left;
+  color: #E33B62;
+  display: inline-block;
+  font-size: 27px;
+}
+.product_order_list{
+  width: 100%;
+  margin: 0px;
+  margin-top: 13px;
+}
+.buttom_buy {
+    color: black;
+    border: 1px solid #E33B62;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+.buttom_buy:hover {
+  background-color: #E33B62;
+  color: white;
+}
+.button_main {
+    text-decoration: none;
+    color: #E33B62;
+    border: 1px solid #E33B62;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin: auto 500px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+.button_main::after {
+    content: "";
+    background-image: url(img/arrow_right.png);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 10px;
+}
+.button_main:hover {
+    background-color: #E33B62;
+    color: white;
+}
+.button_main:hover::after {
+    background-image: url(img/arrow_right_hover.png);
+}
+
+footer {
+  width: 100%;
+}
+.footer {
+  font-family: 'Cormorant Garamond', serif;
+  width: 100%;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.footer-blocks {
+  width: 25%;
+  display: block;
+  float: left;
+  margin: 0;
+  border: none;
+  border-top: 1px solid #e0dfe0;
+}
+.logo_footer {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+}
+.rights_footer {
+  font-size: 15px;
+  color: #aeaeae;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 26px;
+}
+.catalog_footer {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+.catalog_footer:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+.collections_footer {
+  margin: o auto;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.collections_footer:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+.news_footer {
+  margin: 0 auto;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.news_footer:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+.about_footer {
+  margin: 0 auto;
+  font-size: 20px;
+}
+.about_footer:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+h5 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 200;
+  font-family: serif;
+}
+.follow_footer {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.icons_footer{
+  display: inline;
+  padding: 0
+}
+.social-net{
+  display: block;
+  float: left;
+  margin: 0 auto;
+}
+.facebook {
+  margin-top: 21px;
+  margin-right: 30px;
+}
+.linkedin {
+  margin-top: 21px;
+  margin-right: 30px;
+}
+.twitter {
+  margin-top: 24px;
+}
+/*
+.twitter {
+  margin: 0 auto;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.twitter:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+.facebook {
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.facebook:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+.linkedin {
+  margin: 0 auto;
+  margin-top: 3px;
+}
+.linkedin:hover {
+  color: #E33B62;
+  cursor: pointer;
+}
+*/
+/*
+.logomain_footer {
+  width: 20%;
+}
+.logo_footer {
+  border-top: 1px solid #e0dfe0;
+  color: black;
+  display: block;
+  text-align: left;
+  padding: 20px 0;
+}
+*/
